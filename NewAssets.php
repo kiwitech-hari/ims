@@ -213,7 +213,7 @@
 										                  <th>Brand</th>
 										                  <th>Modal No</th>
 										                  <th>Serial No</th>
-										                   <th>Purchase Date</th>
+										                   <th>Other Details</th>
 										                  <th>Asign Status</th>
 														  <th>Actions</th>
 
@@ -247,7 +247,7 @@
 										                              <td>".$row["model_no"]."</td>
 										                              <td><a href=Assets.php?Asset_Details=".$row['serial_no'].">".$row["serial_no"]."</a></td>
 
-										                              <td>".$row["purchase_date"]."</td>
+										                              <td>".$row["other_info"]."</td>
 										                              <td>".$row["asign_status"]."</td>
 										                              <td><div class='actions'>
 										               							<a href=#?id=".$row['id']." class='fa fa-plus'>  </a>
