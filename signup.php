@@ -138,7 +138,7 @@ if (isset($_POST['signup'])) {
 
 	$pass=$_POST['pwd'];
 
-	$usertype=$_POST['usertype'];
+	$usertype=ucwords($_POST['usertype']);
 
 
 
