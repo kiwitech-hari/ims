@@ -102,20 +102,17 @@
 					<div class="row">
 						<div class="col-md-0">
 						<!--here we can add anything other-->
+
 						</div>
 
 						<div class="col-md-12">
-							<div class="tabs tabs-primary">
+						<div class="tabs tabs-primary">
 								<ul class="nav nav-tabs">
-									<li class="active">	
-										<a  href="#tab1" data-toggle="tab"><i class="fa  fa-plus-square"></i>  Welcome</a>
-									</li>
-
 									<li>
 										<a href="userlist.php"><i class="fa fa-user"></i> User Assets</a>
 									</li>
-									<li>
-										<a href="AvailableAssets.php" ><i class="fa fa-book"></i> Asign Hardware</a>
+									<li class="active">
+										<a href="AvailableAssets.php"><i class="fa fa-book"></i> Available Hardwares</a>
 									</li>
 									<li>	
 									<a href="NewAssets.php"><i class="fa  fa-plus-square"></i>  Add Assets</a>
@@ -133,71 +130,81 @@
 									<a href="#tab7" data-toggle="tab"><i class="fa  fa-rocket"></i>  TAB7</a>
 									</li> -->
 								</ul>
-								<div class="tab-content">
-									<div id="tab1" class="tab-pane active">
-										<!--tab1 Start -->
+									<div class="tab-content">	
+										<section class="panel">
+													<header class="panel-heading">
+														<div class="panel-actions">
+															<a href="#" class="fa fa-caret-down"></a>
+															<a href="#" class="fa fa-times"></a>
+														</div>
+												
+														<h2 class="panel-title">Asset Details</h2>
+													</header>
+													<div class="panel-body">
+														<table class="table table-bordered table-striped mb-none" id="datatable-tabletools" data-swf-path="assets/vendor/jquery-datatables/extras/TableTools/swf/copy_csv_xls_pdf.swf">
+															<thead>
+																<tr>
+												                  <th>ID.</th>
+												                  <th>Assets</th>
+												                  <th>Brand</th>
+												                  <th>Modal No</th>
+												                  <th>Serial No</th>
+												                   <th>Purchase Date</th>
+												                  <th>Action</th>
+												                </tr>
+															</thead>
+															<tbody>
+																<?php
+																//include 'inc/config.php';
+																//$fetch="";
 
-										<div class="alert alert-info">
+																$sql = "SELECT * FROM `it_assets` WHERE `asign_status`='$asign'";
+																//echo "$sql";
+																$query=mysqli_query($conn,$sql);
+																while ($row=mysqli_fetch_array($query)) {
+																
+							               						   echo "<tr>";
+													               echo "<td>".$row['id']."</td>";
+													               echo "<td>".$row['category']."</td>";
+													               echo "<td>".$row['brand']."</td>";
+													               echo "<td>".$row['model_no']."</td>";
+													               //echo "<td>".$row['serial_no']."</td>";
 
-														<button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
+													               echo "<td> <a href=Assets.php?Asset_Details=".$row['serial_no'].">".$row['serial_no']."</a></td>";
 
-														<strong>Successfull!</strong> You <a href="" class="alert-link"> have login Successfully</a>, Now you can check hardware status and other information.
 
+													               //echo "<td>".$row['other_info']."</td>";
+													               echo "<td>".$row['purchase_date']."</td>";
+													                           
+													                echo "<td>
+									               							<div class='actions'>
+									               							<a href=Assets.php?id=".$row['id']." class='fa  fa-send' data-original-title='Asign This Asset to any user' data-toggle='tooltip' data-placement='top' title=''></a>
+									               							<a href=Assets.php?Asset_Details=".$row['serial_no']." class='fa fa-pencil'>  </a>
+									               							<a href=DeleteRecords.php?id=".$row['id']." class='fa fa-times' data-original-title='Delete Everything of This user' data-toggle='tooltip' data-placement='top' title=''>  </a>
+									               							</div></td>";
+													               echo "</tr>"; 
+
+
+
+																 }?>														
+															</tbody>
+														</table>
 													</div>
-																			
-										<!--tab 1 End Here-->
-									</div>
-
-
-									<div id="tab2" class="tab-pane">
-										<!--Start TAB2 from here-->
+												</section>
 										
-
-																					
-
-										<!--END TAB2 from here-->
 									</div>
-									
-									<!--tab Start -->
-									<div id="tab3" class="tab-pane">
-										<!--Start Table from here-->
-
-										<!--//////////Asset table //////////-->
-
-															
-										
-										<!--End Table from here-->
-									</div>
-
-									<div id="tab4" class="tab-pane">
-										<!--Start TAB4 from here-->
-										<?php //include 'inc/profile.php'; ?>
-
-										
-
-
-										<!--END TAB4 from here-->
-									</div>
-									<div id="tab5" class="tab-pane">
-										<!--Start TAB5 from here-->
-										<h3>Welcome to you in TAB 5</h3>
-										<!--END TAB5 from here-->
-									</div>
-									<div id="tab6" class="tab-pane">
-										<!--Start TAB6 from here-->
-										<h3>Welcome to you in TAB 6</h3>
-										<!--END TAB6 from here-->
-									</div>
-									<div id="tab7" class="tab-pane">
-										<!--Start TAB7 from here-->
-										<h3>Welcome to you in TAB 7</h3>
-										<!--END TAB7 from here-->
-									</div>
-								</div>
-							</div>
+							
 						</div>
+
+
+
+
 						
 					</div>	
+
+
+
+					
 
 
 
