@@ -305,5 +305,8 @@
 		<script src="assets/javascripts/ui-elements/examples.modals.js"></script>
 		
 		<script src="assets/javascripts/ui-elements/examples.notifications.js"></script>
+
+		<!-- below section is open for hide ads which is comming from freee hosting server. -->
+		<section class="abc">
 	</body>
 </html>
