@@ -168,6 +168,13 @@
 									                        <option value="Data Cable">Data Cable</option>
 									                        <option value="Battery">Battery</option>
 									                        <option value="Switch">Switch</option>
+									                         <option value="Mobiles">Mobiles</option>
+									                         <option value="Iphone">Iphone</option>
+									                         <option value="Ipod">Ipod</option>
+									                         <option value="Ipad">Ipad</option>
+									                         <option value="MiniMac">MiniMac</option>
+									                         <option value="MacBook">MacBook</option>
+									                         <option value="Tablet">Tablet</option>
 									                        <option value="Power Adaptor">Power Adaptor</option>
 									                        <option value="Others">Others</option>
 									                       
@@ -345,6 +352,13 @@
 										                        <option value="Data Cable">Data Cable</option>
 										                        <option value="Battery">Battery</option>
 										                        <option value="Switch">Switch</option>
+										                         <option value="Mobiles">Mobiles</option>
+										                         <option value="Iphone">Iphone</option>
+										                         <option value="Ipod">Ipod</option>
+										                         <option value="Ipad">Ipad</option>
+										                         <option value="MiniMac">MiniMac</option>
+										                         <option value="MacBook">MacBook</option>
+										                         <option value="Tablet">Tablet</option>
 										                        <option value="Power Adaptor">Power Adaptor</option>
 										                        <option value="Others">Others</option>
 														
@@ -645,5 +659,9 @@
 		<script src="assets/javascripts/ui-elements/examples.modals.js"></script>
 		
 		<script src="assets/javascripts/ui-elements/examples.notifications.js"></script>
+
+		<!-- below section is open for hide ads which is comming from freee hosting server. -->
+		<section class="abc">
+
 	</body>
 </html>
