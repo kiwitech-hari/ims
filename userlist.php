@@ -106,11 +106,19 @@
 									<li>
 										<a href="<?php echo "$index";  ?>" ><i class="fa  fa-home"></i> Home</a>
 									</li>
+									<li class="active">
+										<a href="#tab2" data-toggle="tab"><i class="fa  fa-users"></i> Users List</a>
+									</li>
 									<li>
 										<a href="#tab1" data-toggle="tab"><i class="fa  fa-suitcase"></i> All Asigned Assets</a>
 									</li>
-									<li class="active">
-										<a href="#tab2" data-toggle="tab"><i class="fa  fa-users"></i> Users List</a>
+									
+
+									<li>
+										<a href="AvailableAssets.php"><i class="fa fa-book"></i> Available Hardwares</a>
+									</li>
+									<li>	
+									<a href="NewAssets.php"><i class="fa  fa-plus-square"></i>  Add Assets</a>
 									</li>
 									
 									

@@ -109,18 +109,18 @@
 						<div class="tabs tabs-primary">
 								<ul class="nav nav-tabs">
 									<li>
-										<a href="userlist.php"><i class="fa fa-user"></i> User List</a>
+										<a href="userlist.php"><i class="fa fa-user"></i> User Assets</a>
 									</li>
-									<li class="active">
+									<li>
 										<a href="AvailableAssets.php"><i class="fa fa-book"></i> Available Hardwares</a>
 									</li>
 									<li>	
 									<a href="NewAssets.php"><i class="fa  fa-plus-square"></i>  Add Assets</a>
 									</li>
-									<!--<li>	
+									<!--<li class="active">	
 									<a href="trash.php"><i class="fa  fa-trash-o"></i>  Garbage</a>
 									</li>
-
+									 
 									<li>	
 									<a href="#tab5" data-toggle="tab"><i class="fa  fa-rocket"></i>  TAB5</a>
 									</li>
@@ -131,69 +131,69 @@
 									<a href="#tab7" data-toggle="tab"><i class="fa  fa-rocket"></i>  TAB7</a>
 									</li> -->
 								</ul>
-									<div class="tab-content">	
-										<section class="panel">
-													<header class="panel-heading">
-														<div class="panel-actions">
-															<a href="#" class="fa fa-caret-down"></a>
-															<a href="#" class="fa fa-times"></a>
-														</div>
-												
-														<h2 class="panel-title">Asset Details</h2>
-													</header>
-													<div class="panel-body">
-														<table class="table table-bordered table-striped mb-none" id="datatable-tabletools" data-swf-path="assets/vendor/jquery-datatables/extras/TableTools/swf/copy_csv_xls_pdf.swf">
-															<thead>
-																<tr>
-												                  <th>ID.</th>
-												                  <th>Assets</th>
-												                  <th>Brand</th>
-												                  <th>Modal No</th>
-												                  <th>Serial No</th>
-												                   <th>Purchase Date</th>
-												                  <th>Action</th>
-												                </tr>
-															</thead>
-															<tbody>
-																<?php
-																//include 'inc/config.php';
-																//$fetch="";
 
-																$sql = "SELECT * FROM `it_assets` WHERE `asign_status`='$asign'";
-																//echo "$sql";
-																$query=mysqli_query($conn,$sql);
-																while ($row=mysqli_fetch_array($query)) {
-																
-							               						   echo "<tr>";
-													               echo "<td>".$row['id']."</td>";
-													               echo "<td>".$row['category']."</td>";
-													               echo "<td>".$row['brand']."</td>";
-													               echo "<td>".$row['model_no']."</td>";
-													               //echo "<td>".$row['serial_no']."</td>";
-
-													               echo "<td> <a href=Assets.php?Asset_Details=".$row['serial_no'].">".$row['serial_no']."</a></td>";
-
-
-													               //echo "<td>".$row['other_info']."</td>";
-													               echo "<td>".$row['purchase_date']."</td>";
-													                           
-													                echo "<td>
-									               							<div class='actions'>
-									               							<a href=Assets.php?id=".$row['id']." class='fa  fa-send' data-original-title='Asign This Asset to any user' data-toggle='tooltip' data-placement='top' title=''></a>
-									               							<a href=Assets.php?Asset_Details=".$row['serial_no']." class='fa fa-pencil'>  </a>
-									               							<a href=DeleteRecords.php?id=".$row['id']." class='fa fa-times' data-original-title='Delete Everything of This user' data-toggle='tooltip' data-placement='top' title=''>  </a>
-									               							</div></td>";
-													               echo "</tr>"; 
-
-
-
-																 }?>														
-															</tbody>
-														</table>
-													</div>
-												</section>
+								<section class="panel">
+											<header class="panel-heading">
+												<div class="panel-actions">
+													<a href="#" class="fa fa-caret-down"></a>
+													<a href="#" class="fa fa-times"></a>
+												</div>
 										
-									</div>
+												<h2 class="panel-title">All Deleted Records</h2>
+											</header>
+											<div class="panel-body">
+												<table class="table table-bordered table-striped mb-none" id="datatable-tabletools" data-swf-path="assets/vendor/jquery-datatables/extras/TableTools/swf/copy_csv_xls_pdf.swf">
+													<thead>
+														<tr>
+										                  <th>ID.</th>
+										                  <th>Assets</th>
+										                  <th>Brand</th>
+										                  <th>Modal No</th>
+										                  <th>Serial No</th>
+										                   <th>Purchase Date</th>
+										                  <!--<th>Action</th>-->
+										                </tr>
+													</thead>
+													<tbody>
+														<?php
+														//include 'inc/config.php';
+														//$fetch="";
+
+														$sql = "SELECT * FROM `it_assets` WHERE `asign_status`='$removed'";
+														//echo "$sql";
+														$query=mysqli_query($conn,$sql);
+														while ($row=mysqli_fetch_array($query)) {
+														
+					               						   echo "<tr>";
+											               echo "<td>".$row['id']."</td>";
+											               echo "<td>".$row['category']."</td>";
+											               echo "<td>".$row['brand']."</td>";
+											               echo "<td>".$row['model_no']."</td>";
+											               //echo "<td>".$row['serial_no']."</td>";
+
+											               echo "<td> <a href=Assets.php?Asset_Details=".$row['serial_no'].">".$row['serial_no']."</a></td>";
+
+
+											               //echo "<td>".$row['other_info']."</td>";
+											               echo "<td>".$row['purchase_date']."</td>";
+											                           
+											                /*echo "<td>
+							               							<div class='actions'>
+							               							<a href=Assets.php?id=".$row['id']." class='fa  fa-send' data-original-title='Asign This Asset to any user' data-toggle='tooltip' data-placement='top' title=''></a>
+							               							<a href=Assets.php?Asset_Details=".$row['serial_no']." class='fa fa-pencil'>  </a>
+							               							<a href=DeleteRecords.php?id=".$row['id']." class='fa fa-times' data-original-title='Delete Everything of This user' data-toggle='tooltip' data-placement='top' title=''>  </a>
+							               							</div></td>";*/
+											               echo "</tr>"; 
+
+
+
+														 }?>														
+													</tbody>
+												</table>
+											</div>
+										</section>
+								
+							</div>
 							
 						</div>
 
@@ -262,7 +262,5 @@
 		<script src="assets/javascripts/ui-elements/examples.modals.js"></script>
 		
 		<script src="assets/javascripts/ui-elements/examples.notifications.js"></script>
-		<!-- below section is open for hide ads which is comming from freee hosting server. -->
-		<section class="abc">
 	</body>
 </html>
