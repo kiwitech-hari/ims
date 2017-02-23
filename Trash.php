@@ -145,12 +145,12 @@
 												<table class="table table-bordered table-striped mb-none" id="datatable-tabletools" data-swf-path="assets/vendor/jquery-datatables/extras/TableTools/swf/copy_csv_xls_pdf.swf">
 													<thead>
 														<tr>
-										                  <th>ID.</th>
+										                  <!--<th>ID.</th>-->
 										                  <th>Assets</th>
 										                  <th>Brand</th>
 										                  <th>Modal No</th>
 										                  <th>Serial No</th>
-										                   <th>Purchase Date</th>
+										                   <th>Other Details</th>
 										                  <!--<th>Action</th>-->
 										                </tr>
 													</thead>
@@ -165,7 +165,7 @@
 														while ($row=mysqli_fetch_array($query)) {
 														
 					               						   echo "<tr>";
-											               echo "<td>".$row['id']."</td>";
+											               //echo "<td>".$row['id']."</td>";
 											               echo "<td>".$row['category']."</td>";
 											               echo "<td>".$row['brand']."</td>";
 											               echo "<td>".$row['model_no']."</td>";
@@ -175,7 +175,7 @@
 
 
 											               //echo "<td>".$row['other_info']."</td>";
-											               echo "<td>".$row['purchase_date']."</td>";
+											               echo "<td>".$row['other_info']."</td>";
 											                           
 											                /*echo "<td>
 							               							<div class='actions'>
