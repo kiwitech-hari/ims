@@ -126,9 +126,13 @@
 
 						$del_asset=$_GET['id'];
 
-						$query=mysqli_query($conn,"DELETE FROM `it_assets` WHERE `id`='$del_asset'");
+						//$query=mysqli_query($conn,"DELETE FROM `it_assets` WHERE `id`='$del_asset'");
 
-						if (! $query) {$msg = "Unable To Delete Records";}else{ $msg = "Deleted Successfuly";}
+						//Now We will not delete any assset from our record. for security perpose but will be disable to view from ui.
+						$query=mysqli_query($conn,"UPDATE `it_assets` SET `asign_status`='$removed' WHERE `id`='$del_asset'");
+
+						//"Unable To Delete Records ads "
+						if (! $query) {$msg = "Unable To Delete Record" ;}else{ $msg = "Deleted Successfuly";}
 
 
 

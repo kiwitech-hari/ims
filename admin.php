@@ -112,7 +112,7 @@
 									</li>
 
 									<li>
-										<a href="userlist.php"><i class="fa fa-user"></i> User Assets</a>
+										<a href="userlist.php"><i class="fa fa-user"></i> User List</a>
 									</li>
 									<li>
 										<a href="AvailableAssets.php" ><i class="fa fa-book"></i> Asign Hardware</a>
