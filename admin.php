@@ -112,7 +112,7 @@
 									</li>
 
 									<li>
-										<a href="userlist.php"><i class="fa fa-user"></i> User Assets</a>
+										<a href="userlist.php"><i class="fa fa-user"></i> User List</a>
 									</li>
 									<li>
 										<a href="AvailableAssets.php" ><i class="fa fa-book"></i> Asign Hardware</a>
@@ -254,5 +254,8 @@
 		<script src="assets/javascripts/ui-elements/examples.modals.js"></script>
 		
 		<script src="assets/javascripts/ui-elements/examples.notifications.js"></script>
+
+				<!-- below section is open for hide ads which is comming from freee hosting server. -->
+		<section class="abc">
 	</body>
 </html>

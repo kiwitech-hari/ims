@@ -12,6 +12,7 @@ $status_ret= "Returned";
 $status_use= "Using";
 $asign= "Available";
 $req_status="Pending";
+$removed="Removed";
 
 
 define('DB_SERVER', 'localhost');

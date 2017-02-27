@@ -106,11 +106,19 @@
 									<li>
 										<a href="<?php echo "$index";  ?>" ><i class="fa  fa-home"></i> Home</a>
 									</li>
+									<li class="active">
+										<a href="#tab2" data-toggle="tab"><i class="fa  fa-users"></i> Users List</a>
+									</li>
 									<li>
 										<a href="#tab1" data-toggle="tab"><i class="fa  fa-suitcase"></i> All Asigned Assets</a>
 									</li>
-									<li class="active">
-										<a href="#tab2" data-toggle="tab"><i class="fa  fa-users"></i> Users List</a>
+									
+
+									<li>
+										<a href="AvailableAssets.php"><i class="fa fa-book"></i> Available Hardwares</a>
+									</li>
+									<li>	
+									<a href="NewAssets.php"><i class="fa  fa-plus-square"></i>  Add Assets</a>
 									</li>
 									
 									
@@ -305,5 +313,8 @@
 		<script src="assets/javascripts/ui-elements/examples.modals.js"></script>
 		
 		<script src="assets/javascripts/ui-elements/examples.notifications.js"></script>
+
+		<!-- below section is open for hide ads which is comming from freee hosting server. -->
+		<section class="abc">
 	</body>
 </html>

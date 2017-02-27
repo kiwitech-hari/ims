@@ -1,4 +1,4 @@
-<?php 
+﻿<?php 
 
 //include 'session.php';
 //require_once 'inc/config.php';
@@ -419,11 +419,15 @@
 													<div class="col-md-9">
 														<select data-plugin-selectTwo class="form-control populate" id="subject" >
 														<option value=""></option>
-															<option value="New Hardware">i need New Hardware</option>
 															<option value="Other">Other Issue</option>
-															<option value="Network Problems">Network Problems</option>
-															<option value="Software Problems">Software Problems</option>
-															<option value="Server Problems">Server Problems</option>
+															<option value="New Hardware">New Hardware</option>
+															<option value="Replace Hardware">Hardware Replacement</option>
+															<option value="Lost Hardware">Lost Hardware</option>
+															<option value="Hardware issue">Hardware issue</option>
+															<option value="Return accessories">Return accessories</option>
+															<option value="Network issue">Network Problems</option>
+															<option value="Software issue">Software Problems</option>
+															<option value="Server issue">Server Problems</option>
 															<option value="No Power in Socket">No Power in Socket</option>
 															<option value="Wifi Not Connecting">Wifi Not Connecting</option>
 														</select> 
@@ -557,5 +561,8 @@
 		<script src="assets/javascripts/ui-elements/examples.modals.js"></script>
 		
 		<script src="assets/javascripts/ui-elements/examples.notifications.js"></script>
+
+		<!-- below section is open for hide ads which is comming from freee hosting server. -->
+		<section class="abc">
 	</body>
 </html>
