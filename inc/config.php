@@ -15,10 +15,10 @@ $req_status="Pending";
 $removed="Removed";
 
 
-define('DB_SERVER', 'localhost');
-define('DB_USERNAME', 'root');
-define('DB_PASSWORD', '');
-define('DB_DATABASE', 'support');
+define('DB_SERVER', 'ec2-54-75-225-143.eu-west-1.compute.amazonaws.com');
+define('DB_USERNAME', 'enznbwvapatltl');
+define('DB_PASSWORD', 'aa16bbc494def31054570cb28d07c7f1ed0e06d306124d2f4706f00c2fb0fbd0');
+define('DB_DATABASE', 'dfrfju7gis3k9i');
 
 
 $conn = mysqli_connect(DB_SERVER,DB_USERNAME,DB_PASSWORD,DB_DATABASE);
