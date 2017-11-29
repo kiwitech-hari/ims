@@ -5,7 +5,7 @@
 	<head>
 
 
-
+	<h2> This is test page </h2>
 		<!-- Basic -->
 
 		<meta charset="UTF-8">
@@ -104,7 +104,7 @@
 
 						<h2>Blank Page</h2>
 
-					
+
 
 						<div class="right-wrapper pull-right">
 
@@ -126,7 +126,7 @@
 
 							</ol>
 
-					
+
 
 							<a class="sidebar-right-toggle" data-open="sidebar-right"><i class="fa fa-chevron-left"></i></a>
 
@@ -160,7 +160,7 @@
 
 
 
-					
+
 
 
 
@@ -214,19 +214,19 @@
 
 		<script src="assets/vendor/jquery-placeholder/jquery.placeholder.js"></script>
 
-		
+
 
 		<!-- Theme Base, Components and Settings -->
 
 		<script src="assets/javascripts/theme.js"></script>
 
-		
+
 
 		<!-- Theme Custom -->
 
 		<script src="assets/javascripts/theme.custom.js"></script>
 
-		
+
 
 		<!-- Theme Initialization Files -->
 
