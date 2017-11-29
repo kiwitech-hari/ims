@@ -1,5 +1,4 @@
-<?php 
-
+<?php
 
 
 //include 'session.php';
@@ -19,7 +18,7 @@
 	<head>
 
 
-
+<h2> This is test page </h2>
 		<!-- Basic -->
 
 		<meta charset="UTF-8">
@@ -128,7 +127,7 @@
 
 						<h2>Hi, <a href="<?php echo "$index";?>"><?php echo "$user_name";?></a></h2>
 
-					
+
 
 						<div class="right-wrapper pull-right">
 
@@ -150,7 +149,7 @@
 
 							</ol>
 
-					
+
 
 							<a class="sidebar-right-toggle" data-open="sidebar-right"><i class="fa fa-chevron-left"></i></a>
 
@@ -192,7 +191,7 @@
 
 									</li>
 
-									
+
 
 								</ul>
 
@@ -242,7 +241,7 @@
 
 													<table class="table table-bordered table-striped table-condensed mb-none">
 
-														
+
 
 														<tr>
 
@@ -250,7 +249,7 @@
 
 															<td><?php echo $user_name;?></td>
 
-															
+
 
 														</tr>
 
@@ -260,7 +259,7 @@
 
 															<td><?php echo $user_mob;?></td>
 
-															
+
 
 														</tr>
 
@@ -270,7 +269,7 @@
 
 															<td><?php echo $user_id;?></td>
 
-															
+
 
 														</tr>
 
@@ -298,11 +297,11 @@
 
 														</tr> -->
 
-														
 
-														
 
-													</table>	
+
+
+													</table>
 
 												</div>
 
@@ -310,9 +309,9 @@
 
 											<!--User information panel-->
 
-										</div>					
+										</div>
 
-									
+
 
 										<section class="panel">
 
@@ -320,7 +319,7 @@
 
 												<div class="panel-actions">
 
-													
+
 
 													<a href="#" class="fa fa-caret-down"></a>
 
@@ -354,7 +353,7 @@
 
 										                   <th>Other Details</th>
 
-										                 
+
 
 										                 <!--  <th>Action</th> -->
 
@@ -378,7 +377,7 @@
 
 														while ($row=mysqli_fetch_array($query)) {
 
-														
+
 
 					               						   echo "<tr>";
 
@@ -396,17 +395,17 @@
 
 											               echo "<td>".$row['note']."</td>";
 
-											               
 
 
 
-											          										                           
+
+
 
 											               // echo "<td> <a href=ReturnAsset.php?id=".$row['id']."><i class='fa fa-undo'></i> Return</a></td>";
 
-											               echo "</tr>"; 															
+											               echo "</tr>";
 
-														 }?>														
+														 }?>
 
 													</tbody>
 
@@ -414,7 +413,7 @@
 
 											</div>
 
-										</section>	
+										</section>
 
 
 
@@ -426,7 +425,7 @@
 
 												<div class="panel-actions">
 
-													
+
 
 													<a href="#" class="fa fa-caret-down"></a>
 
@@ -440,9 +439,9 @@
 
 											<div class="panel-body">
 
-												
 
-												
+
+
 
 
 
@@ -466,7 +465,7 @@
 
 										                   <th>Remarks</th>
 
-										                  
+
 
 										                </tr>
 
@@ -488,7 +487,7 @@
 
 														while ($row=mysqli_fetch_array($query)) {
 
-														
+
 
 					               						   echo "<tr>";
 
@@ -506,9 +505,9 @@
 
 											               echo "<td>".$row['note']."</td>";
 
-											               echo "</tr>"; 															
+											               echo "</tr>";
 
-														 }?>														
+														 }?>
 
 													</tbody>
 
@@ -516,9 +515,9 @@
 
 											</div>
 
-										</section>										
+										</section>
 
-										
+
 
 										<!--tab 1 End Here-->
 
@@ -556,7 +555,7 @@
 
 													var subject=$("#subject").val();
 
-													
+
 
 													$.ajax({
 
@@ -612,11 +611,11 @@
 
 													//window.alert("data submitted successful!")
 
-													 
+
 
 												});
 
-											});	
+											});
 
 										</script>
 
@@ -650,7 +649,7 @@
 
 													</div>
 
-																						
+
 
 												<div class="form-group">
 
@@ -670,7 +669,7 @@
 
 													</div>
 
-													
+
 
 												</div>
 
@@ -688,7 +687,7 @@
 
 													<div class="col-md-4">
 
-														<input type="text" value="<?php echo $today;?>" id="req_dt"  class="form-control" readonly> 
+														<input type="text" value="<?php echo $today;?>" id="req_dt"  class="form-control" readonly>
 
 													</div>
 
@@ -708,9 +707,9 @@
 
 															<option value="New Hardware">New Hardware</option>
 
-															
 
-															<?php 
+
+															<?php
 
 																$sql="SELECT * FROM `asigned_assets` WHERE `userid`='$user_id' AND `status`='$status_use'";
 
@@ -718,7 +717,7 @@
 
 																while ($row=mysqli_fetch_array($query)) {
 
-																echo "<option value=".$row['asset']."(".$row['serial_no'].")>".$row['asset']." (" . $row['serial_no'].")</option>";																		
+																echo "<option value=".$row['asset']."(".$row['serial_no'].")>".$row['asset']." (" . $row['serial_no'].")</option>";
 
 															}?>
 
@@ -734,13 +733,13 @@
 
 															<option value="Normal">Normal</option>
 
-															<option value="High">High</option> 
+															<option value="High">High</option>
 
 															<option value="Urgent">Urgent</option>
 
-															<option value="Critical">Critical</option> 
+															<option value="Critical">Critical</option>
 
-														</select> 
+														</select>
 
 													</div>
 
@@ -770,7 +769,7 @@
 
 															<option value="Wifi Not Connecting">Wifi Not Connecting</option>
 
-														</select> 
+														</select>
 
 													</div>
 
@@ -778,7 +777,7 @@
 
 
 
-												
+
 
 												<div class="form-group">
 
@@ -796,7 +795,7 @@
 
 
 
-												
+
 
 												<footer class="panel-footer">
 
@@ -814,7 +813,7 @@
 
 												</footer>
 
-													
+
 
 												<!--</form>-->
 
@@ -838,11 +837,11 @@
 
 												</div>
 
-										 		
+
 
 												<h2 class="panel-title">Asset Details</h2>
 
-											</header> 
+											</header>
 
 											-->
 
@@ -864,7 +863,7 @@
 
 										                  <th>Solutions</th>
 
-										                  <th>Status</th>				                  
+										                  <th>Status</th>
 
 										                </tr>
 
@@ -872,31 +871,31 @@
 
 													<tbody>
 
-														<?php 
+														<?php
 
-										              	$sql="SELECT * FROM `itsupport` WHERE `userid`='$user_id'";       
+										              	$sql="SELECT * FROM `itsupport` WHERE `userid`='$user_id'";
 
 										         		$query =mysqli_query($conn,$sql);
 
-										                 while ($row = mysqli_fetch_array($query)) {     
+										                 while ($row = mysqli_fetch_array($query)) {
 
 								                      	 echo "<tr>
 
 								                       			  <td>".$row["date"]."</td>
 
-									                              <td>".$row["sysid"]."</td>         
+									                              <td>".$row["sysid"]."</td>
 
 									                              <td>".$row["probs"]."</td>
 
-									                              <td>".$row["priority"]."</td>	   	
+									                              <td>".$row["priority"]."</td>
 
 									                              <td>".$row["solutions"]."</td>
 
-									                              <td>".$row["status"]."</td>							                              
+									                              <td>".$row["status"]."</td>
 
 									                            </tr>";
 
-								                        	 }?>           
+								                        	 }?>
 
 										              </tbody>
 
@@ -906,7 +905,7 @@
 
 										</section>
 
-																		
+
 
 
 
@@ -920,7 +919,7 @@
 
 			</div>
 
-		</div>	
+		</div>
 
 
 
@@ -940,13 +939,13 @@
 
 
 
-	<!--///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////	-->				
+	<!--///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////	-->
 
-					
 
-					
 
-						
+
+
+
 
 					<!-- end: page -->
 
@@ -956,7 +955,7 @@
 
 
 
-			<?php require 'inc/r_sidebar.php';?>	
+			<?php require 'inc/r_sidebar.php';?>
 
 
 
@@ -980,7 +979,7 @@
 
 		<script src="assets/vendor/jquery-placeholder/jquery.placeholder.js"></script>
 
-		
+
 
 		<!-- Specific Page Vendor -->
 
@@ -996,19 +995,19 @@
 
 		<script src="assets/vendor/pnotify/pnotify.custom.js"></script>
 
-		
+
 
 		<!-- Theme Base, Components and Settings -->
 
 		<script src="assets/javascripts/theme.js"></script>
 
-		
+
 
 		<!-- Theme Custom -->
 
 		<script src="assets/javascripts/theme.custom.js"></script>
 
-		
+
 
 		<!-- Theme Initialization Files -->
 
@@ -1028,7 +1027,7 @@
 
 		<script src="assets/javascripts/ui-elements/examples.modals.js"></script>
 
-		
+
 
 		<script src="assets/javascripts/ui-elements/examples.notifications.js"></script>
 
